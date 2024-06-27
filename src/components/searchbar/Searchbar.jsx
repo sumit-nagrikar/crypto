@@ -32,7 +32,8 @@ const Searchbar = () => {
               <p
                 key={coin.id}
                 className="cursor-pointer font-normal"
-                onClick={handleClick}
+                onClick={handleClick()}
+                onSubmit={handleClick()}
               >
                 {coin.name}
               </p>
